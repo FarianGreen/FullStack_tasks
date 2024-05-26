@@ -1,0 +1,31 @@
+.user-card {
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 45%;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.user-card:hover {
+  background-color: #f0f0f0;
+}
+
+.user-name {
+  font-weight: bold;
+  color: black;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.icon {
+  flex: 0 1 10%;
+}

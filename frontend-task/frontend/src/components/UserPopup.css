@@ -1,0 +1,81 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup {
+  max-width: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px 12px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 30px 25px;
+}
+
+.popup-close {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.popup-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+.popup-content__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  font-family: "Proxima Nova";
+}
+.popup-content {
+  margin-top: 20px;
+}
+.popup-text {
+  font-size: 18px;
+  font-family: "Proxima Nova";
+}
+.popup-userInfo {
+  color: #8189a3;
+}
+
+.popup-content .popup-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #555;
+}
+.additional-info {
+  font-size: 18px;
+}
+.additional-info__text {
+  margin-top: 20px;
+  font-family: "Proxima Nova";
+  color: #8189a3;
+  overflow-wrap: break-word;
+}

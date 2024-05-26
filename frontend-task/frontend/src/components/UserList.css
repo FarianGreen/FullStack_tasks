@@ -1,0 +1,39 @@
+.user-list {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 24px;
+  pointer-events: none;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

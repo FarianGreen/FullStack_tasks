@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+</head>
+<body>
+    <h1>Employee List</h1>
+    <ul>
+        <% 
+        // Определение XQuery-запроса для получения полных имен сотрудников
+        var query = "for $elem in collaborators return $elem/fullname";
+
+        // Выполнение XQuery-запроса
+        var results = XQuery(query);
+
+        // Проверка наличия результатов и вывод каждого имени
+        if (results > 0) {
+            for (var i = 0; i < results.length; i++) {
+        %>
+            <li><%= results[i] %></li>
+        <% 
+            }
+        } else {
+        %>
+            <li>No employees found.</li>
+        <% 
+        }
+        %>
+    </ul>
+</body>
+</html>
